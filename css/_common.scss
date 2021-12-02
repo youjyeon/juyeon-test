@@ -1,0 +1,126 @@
+//css컴파일하는 목적:html에서 css파일 호출할려고
+//scss파일은 브라우저가 인식을 못함,,css파일만 인식가능
+//common.scss파일은 html에서 호출하지않음
+//css로 컴파일 할 필요 없음
+
+@charset "utf-8";
+@font-face {
+    font-family: 'Cafe24 Ssurround';
+    src: url('../font/Cafe24Ssurround.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/* common.css */
+*{
+    font-family: 'Cafe24 Ssurround';
+    box-sizing: border-box;
+}
+body{margin:0;}
+h1,h2,h3,h4,h5,h6,p{margin:0;}
+a{text-decoration:none; color:#222;}
+img{vertical-align:middle;}
+*{box-sizing: border-box;}
+table{border-collapse: collapse;}
+ul,li{list-style-type: none; padding:0; margin:0;}
+
+$p100 : 100px 0;//padding
+
+@mixin flex($jc, $ai,$fd,$fw){
+    display: flex;
+    justify-content: $jc;
+    align-items:  $ai;
+    flex-direction:$fd;
+    flex-wrap: $fw;
+}
+
+
+header{
+    position: fixed;
+    left:0; top:0;
+    width:100%;
+    padding:30px 0;
+    z-index:9;
+    >div{
+        position: relative;
+        width:70%; margin: 0 auto;
+        @include flex(space-between,center,row,nowrap);
+        // display: flex;
+        // justify-content:space-between ;
+        // align-items: center;
+        a{color:#fff;}
+        h1{
+            a{
+                background: url('../img/logo.png') no-repeat;
+                font-size: 0;
+                width:96px; height:36px;
+                display: block;//인라인-block or inline-block
+            }
+        }
+        nav{
+            flex-grow:1; text-align: right;
+            a{display:inline-block; padding: 0 2%;}
+           }
+           .trigger-menu{
+               right:0; top:30;
+               position: absolute;
+               width:26px; height:16px;
+               cursor:pointer;
+
+              display: none;
+               span{ //span은 trigger의 width,height값 안에 갇히는것
+                   width:100%; 
+                   border-bottom: 2px solid #fff;
+                    position: absolute;
+                    left:0; top:50%;
+
+                //&-> span(상위요소)
+                &:nth-of-type(1){
+                    transform: translateY(-6px);
+                }
+                &:nth-of-type(3){
+                    transform: translateY(6px);
+                }
+                }
+            
+
+           }
+    }
+
+}
+
+
+.contact{
+    background-color: #222;
+    color:#fff;
+    text-align: center;
+    padding:$p100;
+    h2{
+        font-size: 3rem; text-transform: uppercase;
+        small{
+            display: block;
+            font-weight: normal;
+            font-size: 1rem;
+        }
+    }
+    p{}
+    div{
+        margin-top: 40px;
+        input{  //input, a =>인라인블록요소
+           
+            padding:18px 40px;
+            border:none;
+            width:30%;
+            vertical-align: middle; //2개이상의 것들이 가장 큰것을 기준으로 정렬.inline-block한테만 쓸수있음(대상자들에게 모두 값을 넣어줘야함)
+        }
+        a{
+            vertical-align: middle;
+            background-color: #fed136;
+            padding: 16px 40px;
+            display: inline-block;
+            color:#fff;
+        }
+    }
+}
+
+footer{  padding:$p100; text-align: center; }

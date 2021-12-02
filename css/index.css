@@ -1,0 +1,452 @@
+@font-face {
+  font-family: 'Cafe24 Ssurround';
+  src: url("../font/Cafe24Ssurround.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* common.css */
+* {
+  font-family: 'Cafe24 Ssurround';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+img {
+  vertical-align: middle;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 30px 0;
+  z-index: 9;
+}
+
+header > div {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+header > div a {
+  color: #fff;
+}
+
+header > div h1 a {
+  background: url("../img/logo.png") no-repeat;
+  font-size: 0;
+  width: 96px;
+  height: 36px;
+  display: block;
+}
+
+header > div nav {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+header > div nav a {
+  display: inline-block;
+  padding: 0 2%;
+}
+
+header > div .trigger-menu {
+  right: 0;
+  top: 30;
+  position: absolute;
+  width: 26px;
+  height: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+header > div .trigger-menu span {
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+header > div .trigger-menu span:nth-of-type(1) {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+header > div .trigger-menu span:nth-of-type(3) {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.contact {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.contact h2 small {
+  display: block;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.contact div {
+  margin-top: 40px;
+}
+
+.contact div input {
+  padding: 18px 40px;
+  border: none;
+  width: 30%;
+  vertical-align: middle;
+}
+
+.contact div a {
+  vertical-align: middle;
+  background-color: #fed136;
+  padding: 16px 40px;
+  display: inline-block;
+  color: #fff;
+}
+
+footer {
+  padding: 100px 0;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 30px 0;
+  z-index: 9;
+}
+
+header > div {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+header > div a {
+  color: #fff;
+}
+
+header > div h1 a {
+  background: url("../img/logo.png") no-repeat;
+  font-size: 0;
+  width: 96px;
+  height: 36px;
+  display: block;
+}
+
+header > div nav {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+header > div nav a {
+  display: inline-block;
+  padding: 0 2%;
+}
+
+header > div .trigger-menu {
+  right: 0;
+  top: 30;
+  position: absolute;
+  width: 26px;
+  height: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+header > div .trigger-menu span {
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+header > div .trigger-menu span:nth-of-type(1) {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+header > div .trigger-menu span:nth-of-type(3) {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.visual {
+  position: relative;
+}
+
+.visual > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.visual > div p {
+  color: #fff;
+  font-size: 5rem;
+}
+
+.visual > div p small {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.visual > div a {
+  background-color: #fed136;
+  padding: 16px 40px;
+  display: inline-block;
+  color: #fff;
+}
+
+.visual > img {
+  width: 100%;
+}
+
+@-webkit-keyframes high {
+  100% {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+}
+
+@keyframes high {
+  100% {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+}
+
+section {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 3rem;
+  white-space: pre-line;
+  text-transform: uppercase;
+}
+
+section h2 small {
+  text-transform: none;
+  font-weight: normal;
+  color: #555;
+  font-size: 12px;
+}
+
+section ul {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px auto;
+}
+
+section ul li {
+  width: 30%;
+  margin-bottom: 5%;
+}
+
+section ul li p > img {
+  width: 100%;
+}
+
+section ul li p:nth-child(2) {
+  background-color: #fff;
+  padding: 30px;
+}
+
+section ul li p:nth-child(2) > b {
+  display: block;
+}
+
+section ul li p:nth-child(2) > em {
+  font-style: normal;
+}
+
+section ul li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section .banner {
+  padding: 100px 0;
+  text-align: center;
+}
+
+section .banner a {
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  margin: 0 2%;
+  font-size: 0;
+}
+
+section .banner a:nth-child(1) {
+  background: url("../img/bn_01.jpg") 0 0/100% no-repeat;
+}
+
+section .banner a:nth-child(2) {
+  background: url("../img/bn_02.jpg") 0 0/100% no-repeat;
+}
+
+section .banner a:nth-child(3) {
+  background: url("../img/bn_03.jpg") 0 0/100% no-repeat;
+}
+
+section .banner a:nth-child(4) {
+  background: url("../img/bn_04.jpg") 0 0/100% no-repeat;
+}
+
+section .contact {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+section .contact h2 {
+  font-size: 3rem;
+}
+
+section .contact h2 small {
+  display: block;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+section .contact div {
+  margin-top: 40px;
+}
+
+section .contact div input {
+  padding: 18px 40px;
+  border: none;
+  width: 30%;
+  vertical-align: middle;
+}
+
+section .contact div a {
+  vertical-align: middle;
+  background-color: #fed136;
+  padding: 16px 40px;
+  display: inline-block;
+  color: #fff;
+}
+
+section footer {
+  padding: 100px 0;
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */
