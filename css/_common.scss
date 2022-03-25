@@ -1,13 +1,5 @@
 @charset "utf-8";
 
-// @mixin font-face($name,$file,$weight,$style){
-   
-//     font-family:"#{$name}";
-//     src:url('/font/#{$file}.woff2') format('woff2');
-//     font-weight:$weight;
-//     font-style:$style;
-    
-// }
 @font-face {
     font-family: 'gotham';
     src: url('../font/GothamSSm-XLight_Web-e6c47212a5d1c045d39623dc07cd5ff6.woff2') format('woff2');
